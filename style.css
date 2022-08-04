@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    padding-top: 20%;
+    background-color: #000;
+}
+
+a {
+    margin-left: 10px;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    width: 50px;
+    display: inline-block;
+    height: 50px;
+    border-radius: 50%;
+    margin: 50px 5px;
+    border: 1px solid #fff;
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+div {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.icon-one {
+    position: relative;
+    transform: translateY(100%);
+    color: silver;
+}
+.icon-two {
+    position: absolute;
+    left: 0;
+    transform: translateY(400%);
+    -webkit-transform: translateY(400%);
+    -moz-transform: translateY(400%);
+    -ms-transform: translateY(400%);
+    -o-transform: translateY(400%);
+}
+.hover {
+    display: block;
+    width: 100%;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+.icons:hover .icon-one{
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+}
+.icons:hover .icon-two{
+    top: 35%;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+/* Facebook hover */
+.facebook:hover{
+    border-color: blue;
+}
+.facebook:hover .icon-two {
+    color: blue;
+}
+
+/* Twitter hover */
+.twitter:hover{
+    border-color: #26dddd;
+}
+.twitter:hover .icon-two {
+    color: #26dddd;
+}
+
+/* İnstagram */
+.instagram:hover{
+    border-color: #bc2a8d;
+}
+.instagram:hover .icon-two {
+    color: #bc2a8d;
+}
+
+/* Linkedin */
+.linkedin:hover{
+    border-color: #0077b5;
+}
+.linkedin:hover .icon-two {
+    color: #0077b5;
+}
+
+/* Youtube */
+.youtube:hover{
+    border-color: red;
+}
+.youtube:hover .icon-two {
+    color: red;
+}
